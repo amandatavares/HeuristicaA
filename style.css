@@ -147,14 +147,14 @@ pre span.key {
 }
 
 #message {
-	color:#f00;
-	font-size:1.2em;
+	color:#FB8500;
 }
 #controls {
 	margin-bottom: 25px;
 	padding:5px 0;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 }
 #search_grid  {
 	width:650px;

@@ -4,25 +4,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <title>Demo - JavaScript A* Search Algorithm</title>
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="style.css" />
 	</head>
 <body>
 	<h1>Algoritmo A*</h1>
     <h4>Um algoritmo de busca A* é um dos mais populares para localização de caminhos (path-finding) e travessia de gráficos. Ele é usado para encontrar o menor caminho entre um objeto e um objetivo</h3>
-    <p>Neste exemplo, temos um grid 15x15 com uma densidade baixa de paredes geradas aleatoriamente, que permite movimentos diagonais. Isso pode ser configurado em Configurações</p>
-    <br>
+    <p>Neste exemplo, temos um grid 15x15 com uma densidade baixa de paredes geradas aleatoriamente, que permite movimentos diagonais. </p>
 
 	<div id="content">
 	    <div id="controls" class='clear'>
-	   
-	    		<br />	    		
+	  	
 	    		<input type="checkbox" name="searchDiagonal" id="searchDiagonal" />
 	    		<label for="searchDiagonal">Permitir movimento na diagonal?</label>
 	    		<br />
-	    		<input type="button" id="btnGenerate" class="btn btn-info" value="Gerar um novo mapa" />
+	    		<br />
+		<span id="message">Clique em uma posição da grid ou</span> 
+		<br>
+		<input type="button" id="btnGenerate" class="btn btn-info" value="Gerar um novo mapa" />
 
-				<br />
-		<span id="message">Clique em uma posição da grid</span>
 	    </div>
 		<br />
 	    <div id="main">
@@ -32,9 +31,14 @@
 	</div>
 	<div id="footer"></div>
 
+	<!-- References
+	Binary Heap taken from http://eloquentjavascript.net/appendix2.html (license: http://creativecommons.org/licenses/by/3.0/)
+	Based on https://github.com/bgrins/javascript-astar
+	Algorithm from https://www.geeksforgeeks.org/a-search-algorithm/ -->
+
 	<script type='text/javascript' src='jquery-1.7.1.min.js'></script>
-	<script type='text/javascript' src='original-implementation/graph.js'></script>
-	<script type='text/javascript' src='original-implementation/astar-list.js'></script>
-	<script type='text/javascript' src='demo.js'></script>
+	<script type='text/javascript' src='graph.js'></script>
+	<script type='text/javascript' src='astar.js'></script>
+	<script type='text/javascript' src='script.js'></script>
 </body>
 </html>

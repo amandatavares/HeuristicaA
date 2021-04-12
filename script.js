@@ -136,7 +136,7 @@ GraphSearch.prototype.cellClicked = function($end) {
 	var fTime = new Date();
 
 	if(!path || path.length == 0)	{
-	    $("#message").text("couldn't find a path ("+(fTime-sTime)+"ms)");
+	    $("#message").text("Nao conseguiu encontrar um caminho ("+(fTime-sTime)+"ms)");
 	    this.animateNoPath();
 	}
 	else {
